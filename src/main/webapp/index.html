@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="content">
+        <div class="form-content">
+            <div class="medium-text">Compress File</div>
+            <form id="uncompressedForm" class="form" action="FileUpload" method="post" enctype="multipart/form-data">
+                <label class="small-text" for="fileName">Enter file name</label>
+                <input id="fileNameUncompressed" name="fileName" type="file">
+                <input id="fileTypeUncompressed" class="hidden" name="fileType" type="text" value="uncompressed">
+                <button id="submitButtonUncompressed" class="purple-button" name="submitButton" type="submit">SEND</button>
+            </form>
+            <a id="compressFile" class="purple-button small-text" href="Compress">Compress</a>
+            <a id="downloadCompressedFile" class="purple-button hidden" href="DownloadCompressedFile">DOWNLOAD</a>
+        </div>
+        <div class="form-content">
+            <div class="medium-text">Uncompress File</div>
+            <form id="compressedForm" class="form" action="FileUpload" method="post"  enctype="multipart/form-data">
+                <label class="small-text" for="fileName">Enter file name</label>
+                <input id="fileNameCompressed" name="fileName" type="file">
+                <input id="fileTypeCompressed" class="hidden" name="fileType" type="text" value="compressed">
+                <button id="submitButtonCompressed" class="purple-button" name="submitButton" type="submit">SEND</button>
+            </form>
+            <a id="decompressFile" class="purple-button small-text" href="UncompressionController">Uncompress</a>
+            <a id="downloadDecompressedFile" class="purple-button hidden" href="DownloadDecompressedFile">DOWNLOAD</a>
+        </div>
+    </div>
+</body>
+
+</html>
